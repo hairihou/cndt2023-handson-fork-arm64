@@ -1,4 +1,5 @@
 apiVersion: argoproj.io/v1alpha1
+
 kind: Rollout
 metadata:
   name: handson
@@ -17,7 +18,7 @@ spec:
     spec:
       containers:
       - name: handson
-        image: chmikata/rollouts-demo:blue
+        image: chmikata/rollouts-demo:green
         imagePullPolicy: Always
         ports:
         - name: http
